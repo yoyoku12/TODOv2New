@@ -20,7 +20,6 @@ type Account struct {
 	UpdatedAt time.Time `json:"updatedAt"`
 }
 
-
 func (acc *Account) ToBytes() ([]byte, error) {
 	file, err := json.Marshal(acc)
 	if err != nil {

@@ -1,1 +1,9 @@
-{"login":"a@a.ru","password":"TnZkMdYFoPVk","url":"https://google.com","createdAt":"2025-06-28T15:46:17.5119321+04:00","updatedAt":"2025-06-28T15:46:17.5119321+04:00"}
+[
+  {
+    "login": "test1",
+    "password": "ZCVXsgtLYLsD",
+    "url": "htpps://test1.com",
+    "createdAt": "2025-06-30T16:09:18.1489548+04:00",
+    "updatedAt": "2025-06-30T16:09:18.1489548+04:00"
+  }
+]
