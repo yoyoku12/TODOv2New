@@ -11,7 +11,7 @@ func AddEventToDb(db *sql.DB, event string) {
 		INSERT INTO events (event, created_at)
 		VALUES ($1, $2)
 	`
-	_, err := db.Exec(query, event, time.Now()) // передаём оба параметра!
+	_, err := db.Exec(query, event, time.Now())
 	if err != nil {
 		fmt.Println("Ошибка добавления события", err)
 	}

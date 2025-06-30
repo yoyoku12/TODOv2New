@@ -15,12 +15,6 @@ type TodoItem struct {
 	CompletedAt *time.Time
 }
 
-type Event struct {
-	ID         int
-	Event      string
-	Created_at time.Time
-}
-
 func NewItem(db *sql.DB, title, description string) error {
 	query := `
 		INSERT INTO todo_items (title, description, created_at, is_done)
@@ -139,7 +133,7 @@ func MarkAsDoneByTitle(db *sql.DB, title string) error {
 	query := `
 		UPDATE todo_items
 		SET is_done = true,
-			completed_at = $1
+		completed_at = $1
 		WHERE title = $2;
 	`
 
